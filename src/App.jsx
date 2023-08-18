@@ -1,23 +1,15 @@
 import './main.scss'
 import {createRoot} from "react-dom/client";
 import Header from "./Header/Header.jsx";
+import DateSet from "./DateSet/DateSet.jsx";
 
 // eslint-disable-next-line react-refresh/only-export-components
 function App() {
     return (<>
         <Header/>
-        <main>
-            <section className="container date_and_time">
-                <div className="dateSetup">
-                    <img className="dateSetup__icon" src="" alt=""/>
-                    <span className="dateSetup__text">17/08/2023</span>
-                </div>
-                <div className="timeSetup">
-                    <img className="timeSetup__icon" src="" alt=""/>
-                    <span className="timeSetup__text">16:11</span>
-                </div>
-            </section>
-            <section className="container addTemp">
+
+            <DateSet/>
+            <section className="box container addTemp">
                 <h2 className="addTemp__hdl">Add Body Temperature Data</h2>
                 <div className="addTemp__content">
                     <img src="" alt="" className="addTemp__icon"/>
@@ -27,7 +19,7 @@ function App() {
                 </div>
                 <button className="addTemp__btn">Add data</button>
             </section>
-            <section className="container addMedicine">
+            <section className="box container addMedicine">
                 <h2 className="addMedicine__hdl">Add Antipyretic Medicine dose</h2>
                 <div className="addMedicine__content">
                         <span className="addMedicine__type">
@@ -39,9 +31,9 @@ function App() {
                 <button className="addMedicine__btn">Add dose</button>
             </section>
             <footer className="container footer">
-                <p className="footer_text">copyrigth by JaFi studios</p>
+                <p style={{textAlign: "center"}} className="footer_text">copyrigth by JaFi studios</p>
             </footer>
-        </main>
+
     </>)
 }
 

@@ -1,7 +1,7 @@
 
 const Header = ()=> {
 return<>
-    <header className="container header">
+    <header className="header">
         <button className="hamburger hamburger--collapse is-active">
                    <span className="hamburger-box">
                          <span className="hamburger-inner"></span>

@@ -11,6 +11,8 @@ $header__item__size: 50px;
   align-items: center;
   gap: 30px;
   padding: 15px;
+  background-color: white;
+
 
   .header {
     &__childName {
@@ -24,9 +26,8 @@ $header__item__size: 50px;
     }
 
     &__childText {
-      color: white;
+      @include Roboto(300, white);
       text-align: center;
-      font-weight: 300;
     }
 
     &__childAvatar {
@@ -36,8 +37,9 @@ $header__item__size: 50px;
       display: flex;
       justify-content: center;
 
-      & > i {
-        font-size: $header__item__size;
+      & > svg {
+        width: $header__item__size;
+        height: $header__item__size;
         color: darkorange;
       }
     }

@@ -1,0 +1,32 @@
+$DateSet_item_size: 20px;
+
+.dateSet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  &__box {
+    flex-grow:1;
+    font-size: 1.2rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    @include sectionBox();
+    &>p{
+
+    }
+  }
+
+  &__box > svg {
+    color: limegreen;
+    width: $DateSet_item_size;
+    height: $DateSet_item_size;
+
+  }
+  &__box:nth-of-type(2) > svg{
+    color: orange;
+  }
+}
