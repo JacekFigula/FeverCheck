@@ -16,7 +16,8 @@ $header__item__size: 50px;
 
   .header {
     &__childName {
-      border-radius: 15% / 50%;
+      //border-radius: 15% / 50%;
+      border-radius: 25px;
       background: linear-gradient(180deg, rgba(2, 118, 241, 1) 0%, rgba(67, 104, 220, 1) 100%);
       height: $header__item__size;
       width: 100%;

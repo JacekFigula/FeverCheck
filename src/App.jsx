@@ -12,8 +12,7 @@ function App() {
             <section className="box container addTemp">
                 <h2 className="addTemp__hdl">Add Body Temperature Data</h2>
                 <div className="addTemp__content">
-                    <img src="" alt="" className="addTemp__icon"/>
-                    <div className="addTemp__slidecontainer">
+                    <i className="fa-solid fa-temperature-three-quarters"></i>                    <div className="addTemp__slidecontainer">
                         <input type="range" min="1" max="100" value="50" className="addTemp__slider" id="myRange"/>
                     </div>
                 </div>
@@ -23,7 +22,7 @@ function App() {
                 <h2 className="addMedicine__hdl">Add Antipyretic Medicine dose</h2>
                 <div className="addMedicine__content">
                         <span className="addMedicine__type">
-                            <img src="" alt="" className="addMedicine__icon"/>
+                            <i className="fa-solid fa-bottle-droplet"></i>
                         </span>
                     <span className="addMedicine__product">Nurofen Forte</span>
                     <span className="addMedicine__amount"> 5 ml</span>
