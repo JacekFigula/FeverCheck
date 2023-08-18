@@ -1,0 +1,46 @@
+$header__item__size: 50px;
+.hamburger {
+  width: $header__item__size;
+  height: $header__item__size;
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 15px;
+
+  .header {
+    &__childName {
+      border-radius: 15% / 50%;
+      background: linear-gradient(180deg, rgba(2, 118, 241, 1) 0%, rgba(67, 104, 220, 1) 100%);
+      height: $header__item__size;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__childText {
+      color: white;
+      text-align: center;
+      font-weight: 300;
+    }
+
+    &__childAvatar {
+      color: darkgrey;
+      width: $header__item__size;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+
+      & > i {
+        font-size: $header__item__size;
+        color: darkorange;
+      }
+    }
+  }
+}
+
