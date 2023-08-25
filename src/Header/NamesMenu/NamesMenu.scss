@@ -1,0 +1,9 @@
+.header{
+  &__namesBtns{
+    display: flex;
+    gap: 10px;
+  }
+  &__namesBtn{
+    width: 50%;
+  }
+}

@@ -2,12 +2,27 @@ import './main.scss'
 import {createRoot} from "react-dom/client";
 import Header from "./Header/Header.jsx";
 import DateSet from "./DateSet/DateSet.jsx";
+import WelcomeScreen from "./WelcomeScreen/WelcomeScreen.jsx";
+import {useState} from "react";
 
 // eslint-disable-next-line react-refresh/only-export-components
 function App() {
-    return (<>
-        <Header/>
+    const [userName, setUserName] = useState('')
+    const constUser=(name)=>{
+        if (name.trim() !== '') {
+            console.log(name)
+            setUserName(name)
+            window.localStorage.setItem("userName", userName);
+        } else {
+            alert("Name cannot be empty")
+        }
+    }
 
+    return (<>
+        <Header props={userName}/>
+        {userName.trim() === '' &&
+        <WelcomeScreen constUser={constUser}/>
+        }
             <DateSet/>
             <section className="box container addTemp">
                 <h2 className="addTemp__hdl">Add Body Temperature Data</h2>

@@ -59,7 +59,15 @@ $header__item__size: 50px;
       top: 100%;
       right: 15px;
       box-shadow: 0px 0px 200px 200px rgba(0,0,0,0.64);
-
+      animation: showNamesMenu 0.5s ease-in-out;
+      @keyframes showNamesMenu{
+        from {
+          transform: translateX(300px);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
     }
     &__namesAvatar{
       align-self: flex-end;
@@ -80,7 +88,7 @@ $header__item__size: 50px;
     }
     &__child{
       display: flex;
-      gap:10px;
+      gap:5px;
       flex-direction: column;
     }
     &__child > * > *{
@@ -90,8 +98,7 @@ $header__item__size: 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 3rem;
-
+      height: 2.5rem;
     }
   }
 }
