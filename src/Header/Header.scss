@@ -71,6 +71,14 @@ $header__item__size: 50px;
     }
     &__namesAvatar{
       align-self: flex-end;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      & > h1 {
+        padding: 0 80px;
+        margin: 0;
+      }
       & > svg {
         width: $header__item__size;
         height: $header__item__size;

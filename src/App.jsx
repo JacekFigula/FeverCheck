@@ -19,7 +19,7 @@ function App() {
     }
 
     return (<>
-        <Header props={userName}/>
+        <Header userName={userName}/>
         {userName.trim() === '' &&
         <WelcomeScreen constUser={constUser}/>
         }
